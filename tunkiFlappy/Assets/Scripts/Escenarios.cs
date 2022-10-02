@@ -5,12 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class Escenarios : MonoBehaviour
 {
-    public GameObject canvasPerdiste;
+        
 
     // Start is called before the first frame update
     void Start()
     {
-        Time.timeScale = 1;   
+
     }
 
     // Update is called once per frame
@@ -21,13 +21,33 @@ public class Escenarios : MonoBehaviour
 
     public void Perdiste()
     {
-        canvasPerdiste.SetActive(true);
-        Time.timeScale = 0;
+        SceneManager.LoadScene(3);
     }
 
     public void Reiniciar()
     {
-        SceneManager.LoadScene("JUEGO");
+        SceneManager.LoadScene(1);
     }
 
+        public void Tienda()
+    {
+        SceneManager.LoadScene(2);
+    }
+
+    public void Navidad()
+    {
+        SceneManager.LoadScene(4);
+    }
+
+    public void Halloween()
+    {
+        SceneManager.LoadScene(5);
+    }
+
+    public void Skins()
+    {
+        SceneManager.LoadScene(6);
+    }
 }
+
+
